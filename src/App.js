@@ -1,5 +1,7 @@
 import React from "react";
 
+import List from "./List";
+
 export default class App extends React.Component {
   constructor(props) {
     super(props);
@@ -28,6 +30,8 @@ export default class App extends React.Component {
           <input value={this.state.term} onChange={this.onChange} />
           <button>Submit</button>
         </form>
+
+        <List items={this.state.items} />
       </div>
     );
   }
